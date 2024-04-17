@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoadingXMLDialogBase</class>
+ <widget class="QDialog" name="LoadingXMLDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>249</width>
+    <height>169</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>loading_XML</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0" colspan="2">
+    <widget class="QLineEdit" name="lineEdit"/>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>取得</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_2"/>
+   </item>
+   <item row="3" column="2">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="text">
+      <string>取得</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>座標系を選択</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="2">
+    <widget class="QComboBox" name="comboBox">
+     <item>
+      <property name="text">
+       <string>プロジェクトの座標系に従う</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 1系:6669</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 2系:6670</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 3系:6671</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 4系:6672</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 5系:6673</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 6系:6674</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 7系:6675</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 8系:6676</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 9系:6677</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 10系:6678</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 11系:6679</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 12系:6680</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 13系:6681</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 14系:6682</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 15系:6683</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 16系:6684</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 17系:6685</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 18系:6686</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JGD2011 19系:6687</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="text">
+      <string>実行</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="text">
+      <string>終了</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="3">
+    <widget class="QRadioButton" name="radioButton">
+     <property name="text">
+      <string>ファイルを取り込む</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">buttonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="text">
+      <string>フォルダ内のファイルを取り込む</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">buttonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>LoadingXMLDialogBase</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>293</x>
+     <y>249</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>303</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>
