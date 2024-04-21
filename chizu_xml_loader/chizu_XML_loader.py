@@ -567,13 +567,13 @@ class ChizuXMLLoader:
             if self.dlg.radioButton.isChecked():
                 save_csv = os.path.splitext(xml_path)[0]+".csv"
                 layer_name = os.path.splitext(os.path.basename(xml_path))[0]
-                with open(save_csv, 'w', encoding='shift_JIS') as f:
+                with open(save_csv, 'w', encoding='UTF-8') as f:
                     f.write(save_text)
 
         if self.dlg.radioButton_2.isChecked():
             save_csv = dir_path+"\\" + os.path.basename(dir_path) + ".csv"
             layer_name = os.path.basename(dir_path)
-            with open(save_csv, 'w', encoding='shift_JIS') as f:
+            with open(save_csv, 'w', encoding='UTF-8') as f:
                 f.write(all_text)
 
         text = self.dlg.comboBox.currentText()
